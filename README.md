@@ -119,24 +119,45 @@ Any static host works: Vercel, Netlify, Cloudflare Pages, or a CDN bucket.
 
 ## Tech Stack
 
-|Layer    |Tech                                                     |
-|---------|---------------------------------------------------------|
-|Frontend |Vanilla HTML/CSS/JS — no framework, no bundler           |
-|Wallet   |ethers.js v6 (CDN) via EIP-1193                          |
-|Fonts    |Syne (headings) + Space Mono (monospace) via Google Fonts|
-|Contracts|Solidity / OpenZeppelin v5 / Hardhat                     |
-|Chain    |Base Mainnet (Chain ID 8453)                             |
-|CI/CD    |GitHub Actions → GitHub Pages                            |
+|Layer    |Tech                                                         |
+|---------|-------------------------------------------------------------|
+|Frontend |Vanilla HTML/CSS/JS — no framework, no bundler               |
+|Wallet   |ethers.js v6 (CDN) via EIP-1193                              |
+|Fonts    |Syne `wght@400..800` (variable) + Space Mono via Google Fonts|
+|Contracts|Solidity / OpenZeppelin v5 / Hardhat                         |
+|Chain    |Base Mainnet (Chain ID 8453)                                 |
+|CI/CD    |GitHub Actions → GitHub Pages                                |
 
 -----
 
 ## External Dependencies
 
-|Dependency                                                |Version|Purpose                |
-|----------------------------------------------------------|-------|-----------------------|
-|[ethers.js](https://docs.ethers.org/)                     |6.13.4 |Wallet connection (CDN)|
-|[Syne](https://fonts.google.com/specimen/Syne)            |—      |Display font           |
-|[Space Mono](https://fonts.google.com/specimen/Space+Mono)|—      |Monospace UI font      |
+|Dependency                                                |Version                   |Purpose                                                                       |
+|----------------------------------------------------------|--------------------------|------------------------------------------------------------------------------|
+|[ethers.js](https://docs.ethers.org/)                     |6.13.4                    |Wallet connection (CDN)                                                       |
+|[Syne](https://fonts.google.com/specimen/Syne)            |`wght@400..800` (variable)|Headings — `.syne-regular` · `.syne-medium` · `.syne-bold` · `.syne-extrabold`|
+|[Space Mono](https://fonts.google.com/specimen/Space+Mono)|—                         |Monospace UI font                                                             |
+
+-----
+
+## Typography
+
+Syne is loaded as a **variable font** using the `wght@400..800` axis, enabling smooth interpolation across the full weight range without loading multiple font files.
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+```
+
+Four utility classes are defined in `index.html` and applied to headings:
+
+|Class            |Weight|Used On                |
+|-----------------|------|-----------------------|
+|`.syne-regular`  |400   |Body-weight labels     |
+|`.syne-medium`   |600   |Card titles (`h3`)     |
+|`.syne-bold`     |700   |Section headings (`h2`)|
+|`.syne-extrabold`|800   |Hero headline (`h1`)   |
 
 -----
 
