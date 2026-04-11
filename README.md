@@ -2,8 +2,6 @@
 
 > Smart Contracts · AI Security · Blockchain Games · SaaS Infrastructure on Base Mainnet
 
-![Auto Assign](https://github.com/Agunnaya-Labs/agunnaya-labs-showcase/actions/workflows/auto-assign.yml/badge.svg)
-![Proof HTML](https://github.com/Agunnaya-Labs/agunnaya-labs-showcase/actions/workflows/proof-html.yml/badge.svg)
 [![Base Mainnet](https://img.shields.io/badge/Base-Mainnet-0052FF?logo=coinbase)](https://basescan.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-38bdf8.svg)](LICENSE)
 [![Audit Dashboard](https://img.shields.io/badge/Audit%20Dashboard-Live-22c55e?logo=vercel&logoColor=white)](https://v0-smart-contract-auditor-bot.vercel.app/)
@@ -66,8 +64,8 @@ All contracts are deployed and verified on Base mainnet.
 ### 1. Clone
 
 ```bash
-git clone https://github.com/Agunnaya-Labs/agunnaya-labs-showcase.git
-cd agunnaya-labs-showcase
+git clone https://github.com/Agunnaya-Labs/agunnaya-labs.github.io.git
+cd agunnaya-labs.github.io
 ```
 
 ### 2. Configure Backend
@@ -164,6 +162,8 @@ Four utility classes are defined in `index.html` and applied to headings:
 
 ## Links
 
+- **Live Site:** [agunnaya-labs.github.io](https://agunnaya-labs.github.io)
+- **GitHub Repo:** [github.com/Agunnaya-Labs/agunnaya-labs.github.io](https://github.com/Agunnaya-Labs/agunnaya-labs.github.io)
 - **GitHub Organization:** [github.com/Agunnaya-Labs](https://github.com/Agunnaya-Labs)
 - **Auditor Bot:** [github.com/apps/smart-contract-auditor-bot](https://github.com/apps/smart-contract-auditor-bot)
 - **Audit Dashboard:** [v0-smart-contract-auditor-bot.vercel.app](https://v0-smart-contract-auditor-bot.vercel.app/)
