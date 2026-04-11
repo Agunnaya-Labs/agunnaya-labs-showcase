@@ -10,7 +10,8 @@
 <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -26,6 +27,32 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
+
+/* ── SYNE VARIABLE FONT UTILITIES ── */
+.syne-regular {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.syne-medium {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.syne-bold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.syne-extrabold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 
 body {
   font-family: 'Syne', sans-serif;
@@ -496,7 +523,7 @@ footer {
 
 <div class="hero">
   <div class="hero-eyebrow">Base Mainnet · Chain ID 8453</div>
-  <h1><span class="grad">AI + Web3<br>Autonomous Ecosystem</span></h1>
+  <h1 class="syne-extrabold"><span class="grad">AI + Web3<br>Autonomous Ecosystem</span></h1>
   <p class="hero-sub">Smart Contracts &nbsp;·&nbsp; AI Security &nbsp;·&nbsp; Blockchain Games &nbsp;·&nbsp; SaaS Infrastructure</p>
   <div class="hero-actions">
     <button class="btn btn-primary" onclick="joinWaitlist()"><span>Join Waitlist</span></button>
@@ -518,27 +545,27 @@ footer {
 
 <section>
   <div class="section-label">// 01 — AI Systems</div>
-  <h2>AI Security Layer</h2>
+  <h2 class="syne-bold">AI Security Layer</h2>
   <p class="section-desc">Automated smart contract auditing powered by static analysis and machine learning.</p>
 
   <div class="grid">
     <div class="card">
       <div class="badge">GitHub App</div>
       <div class="card-icon">🤖</div>
-      <h3>Smart Contract Auditor Bot</h3>
+      <h3 class="syne-medium">Smart Contract Auditor Bot</h3>
       <p>AI-powered security agent that performs static analysis on Solidity PRs. Detects reentrancy, tx.origin misuse, honeypot patterns, and more.</p>
       <a href="https://github.com/apps/smart-contract-auditor-bot" target="_blank" rel="noopener">Install App →</a>
     </div>
     <div class="card">
       <div class="badge">Live</div>
       <div class="card-icon">📊</div>
-      <h3>Audit Dashboard</h3>
+      <h3 class="syne-medium">Audit Dashboard</h3>
       <p>Real-time vulnerability detection interface. Severity-coded findings with GitHub Checks integration and PR comment posting.</p>
       <a href="https://v0-smart-contract-auditor-bot.vercel.app/" target="_blank" rel="noopener">Open Dashboard →</a>
     </div>
     <div class="card">
       <div class="card-icon">🔬</div>
-      <h3>6 Static Detectors</h3>
+      <h3 class="syne-medium">6 Static Detectors</h3>
       <p>Reentrancy · tx.origin · Unchecked calls · Selfdestruct · Honeypot patterns · Hardcoded secrets</p>
     </div>
   </div>
@@ -550,14 +577,14 @@ footer {
 
 <section id="arena">
   <div class="section-label">// 02 — Arena Protocol</div>
-  <h2>Blockchain Gaming System</h2>
+  <h2 class="syne-bold">Blockchain Gaming System</h2>
   <p class="section-desc">Five verified contracts on Base mainnet forming the Arena battle ecosystem.</p>
 
   <div class="grid">
     <div class="card">
       <div class="badge">ERC-20</div>
       <div class="card-icon">🪙</div>
-      <h3>Arena Token</h3>
+      <h3 class="syne-medium">Arena Token</h3>
       <p>Native ecosystem token powering rewards, staking, and governance.</p>
       <div class="address">0x3b855F88CB93aA642EaEB13F59987C552Fc614b5</div>
       <a href="https://basescan.org/address/0x3b855F88CB93aA642EaEB13F59987C552Fc614b5" target="_blank" rel="noopener">View on Basescan →</a>
@@ -565,7 +592,7 @@ footer {
     <div class="card">
       <div class="badge">ERC-721</div>
       <div class="card-icon">🏆</div>
-      <h3>Champions NFT</h3>
+      <h3 class="syne-medium">Champions NFT</h3>
       <p>Procedurally generated champion avatars with 6 classes and 5 rarity tiers.</p>
       <div class="address">0x68f08b005b09B0F7D07E1c0B5CDe18E43CE2486A</div>
       <a href="https://basescan.org/address/0x68f08b005b09B0F7D07E1c0B5CDe18E43CE2486A" target="_blank" rel="noopener">View on Basescan →</a>
@@ -573,7 +600,7 @@ footer {
     <div class="card">
       <div class="badge">Game Engine</div>
       <div class="card-icon">⚔️</div>
-      <h3>Battle Engine</h3>
+      <h3 class="syne-medium">Battle Engine</h3>
       <p>On-chain battle resolution with verifiable randomness and event-driven state.</p>
       <div class="address">0xF6fc2B6a306B626548ca9dF25B31a22D0f8971CF</div>
       <a href="https://basescan.org/address/0xF6fc2B6a306B626548ca9dF25B31a22D0f8971CF" target="_blank" rel="noopener">View on Basescan →</a>
@@ -581,7 +608,7 @@ footer {
     <div class="card">
       <div class="badge">Marketplace</div>
       <div class="card-icon">🏪</div>
-      <h3>Arena Marketplace</h3>
+      <h3 class="syne-medium">Arena Marketplace</h3>
       <p>Escrow-secured NFT marketplace with reentrancy protection and fee mechanism.</p>
       <div class="address">0x67817157Dd6E5945ac2fAf1a822e7f1dE26C698E</div>
       <a href="https://basescan.org/address/0x67817157Dd6E5945ac2fAf1a822e7f1dE26C698E" target="_blank" rel="noopener">View on Basescan →</a>
@@ -589,7 +616,7 @@ footer {
     <div class="card">
       <div class="badge">PvP</div>
       <div class="card-icon">🥊</div>
-      <h3>PvP System</h3>
+      <h3 class="syne-medium">PvP System</h3>
       <p>Player-vs-player matchmaking and ranked combat with on-chain result finality.</p>
       <div class="address">0xd0C4Af12E95f9590e7314D079C58597771E57533</div>
       <a href="https://basescan.org/address/0xd0C4Af12E95f9590e7314D079C58597771E57533" target="_blank" rel="noopener">View on Basescan →</a>
@@ -603,23 +630,23 @@ footer {
 
 <section>
   <div class="section-label">// 03 — SaaS Infrastructure</div>
-  <h2>Revenue Layer</h2>
+  <h2 class="syne-bold">Revenue Layer</h2>
   <p class="section-desc">Enterprise-grade infrastructure powering the ecosystem.</p>
 
   <div class="grid">
     <div class="card">
       <div class="card-icon">📈</div>
-      <h3>Analytics Engine</h3>
+      <h3 class="syne-medium">Analytics Engine</h3>
       <p>On-chain event indexing, wallet analytics, and real-time dashboards.</p>
     </div>
     <div class="card">
       <div class="card-icon">⚡</div>
-      <h3>Automation System</h3>
+      <h3 class="syne-medium">Automation System</h3>
       <p>Trigger-based contract interactions, scheduled operations, and bot infrastructure.</p>
     </div>
     <div class="card">
       <div class="card-icon">💳</div>
-      <h3>Stripe Monetization</h3>
+      <h3 class="syne-medium">Stripe Monetization</h3>
       <p>Fiat on-ramp with Stripe Checkout, subscription management, and pro tier access.</p>
     </div>
   </div>
@@ -629,7 +656,7 @@ footer {
 
 <div class="cta-block">
   <div class="section-label">// Join the Ecosystem</div>
-  <h2>Build with Agunnaya Labs</h2>
+  <h2 class="syne-bold">Build with Agunnaya Labs</h2>
   <p>Get early access to the Arena Protocol, AI auditing tools, and SaaS APIs.</p>
   <div class="waitlist-wrap">
     <input class="waitlist-input" id="email" type="email" placeholder="your@email.com" />
